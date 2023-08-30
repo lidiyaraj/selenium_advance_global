@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="TestScript.ST_TC_006_Test">
+        <methods>
+          <include name="launchingBrowser"/>
+          <include name="signingOutfromthepage"/>
+          <include name="vERIFY_THAT_USER_CAN_ADD_MODULE_AND_CHECK"/>
+          <include name="navigatingToApplication"/>
+        </methods>
+      </class> <!-- TestScript.ST_TC_006_Test -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
