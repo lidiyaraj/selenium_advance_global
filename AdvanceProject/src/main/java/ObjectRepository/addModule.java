@@ -13,6 +13,16 @@ import GenericUtility.WebDriverUtility;
 public class addModule  {
 	//	WebDriverUtility util;
 
+	public WebElement getFilter() {
+		return filter;
+	}
+
+
+
+	public WebElement getViewname() {
+		return Viewname;
+	}
+
 	public addModule(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
@@ -57,6 +67,12 @@ public class addModule  {
     
     @FindBy(name = "PrimeFld")
     private WebElement fildToShow;
+    
+    @FindBy(linkText="Create Filter")
+	private WebElement filter;
+	
+	@FindBy(name="viewName")
+	private WebElement Viewname;
 
 	public WebElement getModuledropdowninchildwindow() {
 		return moduledropdowninchildwindow;
